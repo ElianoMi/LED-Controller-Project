@@ -36,3 +36,8 @@ Application use :
     - "Enter Color" Text Field : Allows you to choose an R,G,B color. When pressed, a pre-selected list will be enabled to save time (corresponding to the 6 buttons of the first page).
       -  N.B.: To send the command, both text fields need to be validated with the Enter key on the phone's keyboard. That will clear the "Enter LED" text field. When a color is chosen from the list, it is automatically validated.
     - "OFF" button : Sends "OFF".
+
+
+Control Bluetooth file is the entire PlatformIO project for the ESP32.
+LedControl file contains the files that I have modified compared to a blank Flutter project. Since there are too many files, I can't upload the whole project. Hope I didn't forget one!
+app-release.apk is the APK of the app.
