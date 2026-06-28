@@ -1,4 +1,4 @@
-# LED-Controller-Project
+# LED_Controller
 Application (coded in Flutter) and ESP32 code (for PlatformIO) to control an LED strip.
 
 Hardware needed : An ESP32, an LED strip, 3 cables.
