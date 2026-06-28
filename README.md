@@ -15,25 +15,25 @@ ESP32's code use : Receives a string with the following forms :
 
 Application use :
   - Music : Plays four songs on repeat. The controllers are at the bottom.
-    ° Left button : short press = next; long press = previous.
-    ° Right button : pause / play;
+    - Left button : short press = next; long press = previous.
+    - Right button : pause / play;
     
-    ° Music continues playing until the app is closed.
-    ° Songs are still to be defined.
+    - Music continues playing until the app is closed.
+    - Songs are still to be defined.
     
   - Home Page : Scanning starts when the "Scan" button at the bottom is selected. Only connects to "LED Controller" (the ESP32). Then, it leads automatically to the first page (the detection require being fairly close to the ESP32).
   
   - First Page : You can switch between pages by swiping left or right.
-    ° "Home" button : Disconnects from the ESP32 and leads to the Home page. At the bottom of the page. When disconnected, automatically sends "OFF".
-    ° The color circle : Shows the last color sent to the LED strip. When pressed, sends "OFF".
-    ° The first six buttons : Send the corresponding command, such as "255,0,0", "0,255,0", "0,0,255".
-    ° "Rainbow Light" button : Sends "RAINBOW". The circle shows a rainbow icon.
-    ° "Animated Rainbow" button : Short press = Sends "50,ARAINBOW"; long press = lets you write the delay you want, then sends "Delay,ARAINBOW". The circle shows a star icon.
+    - "Home" button : Disconnects from the ESP32 and leads to the Home page. At the bottom of the page. When disconnected, automatically sends "OFF".
+    - The color circle : Shows the last color sent to the LED strip. When pressed, sends "OFF".
+    - The first six buttons : Send the corresponding command, such as "255,0,0", "0,255,0", "0,0,255".
+    - "Rainbow Light" button : Sends "RAINBOW". The circle shows a rainbow icon.
+    - "Animated Rainbow" button : Short press = Sends "50,ARAINBOW"; long press = lets you write the delay you want, then sends "Delay,ARAINBOW". The circle shows a star icon.
 
   - Second Page :
-      ° LED Matrix : Shows which LED is at which color. If "Rainbow Light" or "Animated Rainbow" button was last selected on the last page, every button will show the same color as the Color circle of page 1. When pressed, adds the LED number to the list (defined in the next bullet). When pressed twice, removes the LED from the list.
-      ° "Enter LED" Text Field : Allows you to write the LEDs chosen with the formats "LED_number", "LED1-LED2" or "LED1;LED2-LED3;...". You can write after the pre-selection made if you already pressed on the LED matrix. If the list ends with a ";", it will be ignored.
-         N.B.: If "Animated Rainbow" was last selected in page 1 and you send a command, the LED strip will stop at the last color it was displaying. The untouched LEDs will keep their color and their corresponding LED in the matrix will keep its color and icon, until the LEDs are modified.
-      ° "Enter Color" Text Field : Allows you to choose an R,G,B color. When pressed, a pre-selected list will be enabled to save time (corresponding to the 6 buttons of the first page).
-         N.B.: To send the command, both text fields need to be validated with the Enter key on the phone's keyboard. That will clear the "Enter LED" text field. When a color is chosen from the list, it is automatically validated.
-      ° "OFF" button : Sends "OFF".
+    - LED Matrix : Shows which LED is at which color. If "Rainbow Light" or "Animated Rainbow" button was last selected on the last page, every button will show the same color as the Color circle of page 1. When pressed, adds the LED number to the list (defined in the next bullet). When pressed twice, removes the LED from the list.
+    - "Enter LED" Text Field : Allows you to write the LEDs chosen with the formats "LED_number", "LED1-LED2" or "LED1;LED2-LED3;...". You can write after the pre-selection made if you already pressed on the LED matrix. If the list ends with a ";", it will be ignored.
+      N.B.: If "Animated Rainbow" was last selected in page 1 and you send a command, the LED strip will stop at the last color it was displaying. The untouched LEDs will keep their color and their corresponding LED in the matrix will keep its color and icon, until the LEDs are modified.
+    - "Enter Color" Text Field : Allows you to choose an R,G,B color. When pressed, a pre-selected list will be enabled to save time (corresponding to the 6 buttons of the first page).
+      N.B.: To send the command, both text fields need to be validated with the Enter key on the phone's keyboard. That will clear the "Enter LED" text field. When a color is chosen from the list, it is automatically validated.
+    - "OFF" button : Sends "OFF".
