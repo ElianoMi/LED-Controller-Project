@@ -42,4 +42,4 @@ Control Bluetooth file is the entire PlatformIO project for the ESP32.
 
 LedControl file contains the files that I have modified compared to a blank Flutter project. Since there are too many files, I can't upload the whole project. Hope I didn't forget one! 
 
-app-release.apk is the APK of the app.
+app-release.apk is the APK of the app. Available at : https://jottacloud.com/s/4886b8fd43ab6af48f792abdf1f55629ae2
